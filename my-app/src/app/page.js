@@ -6,6 +6,8 @@ import React, { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
 import { abi, NFT_CONTRACT_ADDRESS } from "../../constants";
 import styles from "./page.module.css";
+import Image from 'next/image';
+import punkImage from './assets/1.png'
 
 export default function Home() {
   // wallet connected keeps track of whether the user's wallet is connected or not
@@ -183,9 +185,16 @@ export default function Home() {
           </div>
           {renderButton()}
         </div>
+
           <div>
-            <img/>
+            <Image
+              src={punkImage} 
+              width={500}
+              height={400} 
+              alt="Punks"
+              />
           </div>
+          
       </div>
 
       <footer className={styles.footer}> Made with &#10084; by Mort&#39;s Labs</footer>
