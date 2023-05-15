@@ -178,7 +178,7 @@ export default function Home() {
           <h1 className={styles.title}>Welcome to HashPunks!</h1>
           <div className={styles.description}>
             {/* Using HTML Entities for the apostrophe */}
-            It&#39;s an NFT collection for the HashPunk Community.
+              NFT collection for the HashPunk Community.
           </div>
           <div className={styles.description}>
               {tokenIdsMinted}/10 have been minted
@@ -194,7 +194,7 @@ export default function Home() {
               alt="Punks"
               />
           </div>
-          
+
       </div>
 
       <footer className={styles.footer}> Made with &#10084; by Mort&#39;s Labs</footer>
